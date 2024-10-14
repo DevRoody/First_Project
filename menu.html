@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Survey Form</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header>
+     <h1>Gaming Form</h1>   
+    </header>
+     <!-- Create Form -->
+     <form  method="post" id="form">
+     <!-- details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+     <!-- input type text -->
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+        <!-- input type email -->
+         <input type="email" id="email" placeholder="Enter your email" required>
+
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age" >
+                Age</label>
+
+        <!-- input type text -->
+         <input type="number" min="18" max="150" id="age" placeholder="Enter your age" required>
+
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+            <!-- Dropdown options -->
+             <select name="role" id="role" required>
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+             </select>
+        </div>
+        
+        <div class="form-control">
+            <label>1.What type of games do you prefer to play the most?
+            </label>
+            <select name="gametype" id="gametype" required>
+            <option value="Action/Adventure">Action/Adventure</option>
+            <option value="roleplayinggames">Role-Playing Games (RPGs)</option>
+            <option value="firstpersonshooters">First-Person Shooters</option>
+            <option value="strategy-rts">Strategy/RTS</option>
+            <option value="sports">Sports</option>
+            <option value="puzzle/braingames">Puzzle/Brain Games</option>
+        </select>
+        
+        </div>
+        <div class="form-control">
+            <label>2.How many hours do you typically spend gaming per week?
+            </label>
+            <select name="timespentgaming" id="timespentgaming" required>
+
+            <option value="lessthan5hours">Less than 5 hours</option>
+            <option value="5-10hours">5-10 hours</option>
+            <option value="10-20hours">10-20 hours</option>
+            <option value="20-30hours">20-30 hours</option>
+            <option value="morethan30hours">More than 30 hours</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>3.What platforms do you primarily use for gaming?
+
+            </label>
+            <select name="platforms" id="platforms" required>
+
+            <option value="Console">Console (PlayStation, Xbox, Nintendo)</option>
+            <option value="pc">PC</option>
+            <option value="mobile">Mobile (smartphone/tablet)</option>
+            <option value="virtualreality">Virtual Reality (VR)</option>
+            </select>
+        </div>
+        
+        <div class="form-control">
+            <label>4.Have you ever participated in esports competitions or events?
+
+            </label>
+            <select name="competitions" id="competitions" required>
+
+            <option value="yes1">Yes, frequently</option>
+            <option value="yes2">Yes, occasionally</option>
+            <option value="no1"> No, but I would like to in the future</option>
+            <option value="no2">No, not interested</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>5.How important are graphics and visuals in a game to you?
+
+            </label>
+            <select name="visuals" id="visuals" required>
+
+            <option value="extremelyimportant">Extremely important</option>
+            <option value="important
+            ">Important
+        </option>
+            <option value="somewhatimportant
+            ">Somewhat important
+        </option>
+            <option value="notimportant">Not important</option>
+            </select>
+        </div>
+
+
+        <div class="form-control">
+            <label>Games You have played ?
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox" name="inp"> The Last of Us
+                  </input>
+              </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp"> Red Dead Redemption 2
+                  </input>
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp"> The Legend of Zelda
+                  </input>
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp"> GTA
+                  </input>
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp"> Witcher
+                  </input>
+            </label>
+        
+        </div>
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+            <textarea name="comment" id="comment" cols="10" rows="5" 
+                      placeholder="Enter your comment here" >
+            </textarea>
+        </div>
+        <button type="submit" value="submit">
+            Submit
+        </button>
+
+
+     </form>
+</body>
+</html>
